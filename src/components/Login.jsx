@@ -28,6 +28,7 @@ function Login() {
         navigate("/")
       }
     } catch (error) {
+      dispatch(hideLoader()) 
       setError(error.message)
     }
   }
