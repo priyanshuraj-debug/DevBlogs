@@ -17,7 +17,7 @@ function Login() {
   const login = async (data) => {
     setError(null)
     try {
-        
+         dispatch(showLoader()) 
       const session = await authService.login(data)
       if (session) {
         const userData = await authService.getCurrentUser()
