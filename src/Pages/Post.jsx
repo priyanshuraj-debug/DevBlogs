@@ -27,7 +27,7 @@ export default function Post() {
         service.deletePost(post.$id).then((status) => {
             if (status) {
                 service.deleteFile(post.featuredImage);
-                navigate("/");
+                navigate("/all-posts");
             }
         });
     };
