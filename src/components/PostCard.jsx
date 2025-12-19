@@ -19,7 +19,7 @@ function PostCard({ $id, title, featuredImage }) {
       >
         <div className="w-full mb-4 overflow-hidden rounded-xl">
           <img
-            src={service.getFileView(featuredImage)}
+            src={service.getFileView(featuredImage).toString()}
             alt={title}
             className="
               w-full h-48 object-cover
